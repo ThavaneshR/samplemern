@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: rgb(231, 9, 91);
+        color: white;
+       } 
+       .n,.e,.s,.p,.z,.a{
+        border: none;
+        height: 25px;
+        width: 200px;
+       }
+       table{
+            padding-top: 30px;
+            padding-bottom: 15px;
+            padding-left:85px;
+            padding-right:85px;
+            height: 450px;
+            margin-top: 100px;
+            background-color:rgb(134, 13, 71);
+            }
+            .a{
+           
+           padding-bottom: 18px;
+           font-family:Arial, Helvetica, sans-serif;
+       }  
+        select{
+            width:125px;
+            height: 30px;
+        }
+        .b{
+            width:340px;
+            height: 40px;
+            border-radius: 5px;
+            border:none;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <table cellspacing="0">
+        <tr>
+            <td><label for="Name">Name:</label></td>
+            <td><input type="text" name="Name" placeholder="your name" class="n"></td>
+            </tr>
+            <tr>
+            <td><label for="Email">Email:</label></td>
+            <td><input type="email" name="Email" placeholder="your email" class="e"></td>
+            </tr>
+            <tr>
+            <td><label for="Password">Password:</label></td>
+            <td><input type="password" name="Password" class="s"></td>
+            </tr>
+            <tr>
+                <td><label for="Phone Number">Phone Number:</label></td>
+                <td><input type="tel" name="Phone Number" class="p"></td>
+            </tr>
+            <tr>
+            <td>Gender:</td>
+            <td>
+                <label for="Male">Male:</label>
+                <input type="radio" name="Gender" id="Male" value="Male">
+                <label for="Female">Female:</label>
+                <input type="radio" name="Gender" id="Female" value="Female">
+                <label for="Other">Other:</label>
+                <input type="radio" name="Gender" id="Other" value="Other">
+            </td>
+            </tr>
+            <tr>
+                <td><label for="language">language</label></td>
+                <td><select name="language" id="language">
+                    <option selected disabled>Select language</option>
+                    <option value="English">English</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Bengali">Bengali</option>
+                    <option value="Kannada">Kannada</option>
+                </select></td>
+                </tr>
+            <tr>
+                <td><label for="Zip Code">Zip Code:</label></td>
+                <td><input type="text" name="Zip Code" class="z"></td>
+            </tr>
+            <tr>
+            <td><label for="About">About:</label></td>
+            <td><textarea name="About" placeholder="Write about yourself..."
+                class="a"></textarea></td>
+            </tr>
+            
+            
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register" class="b">
+                </td>
+            </tr>
+    </table>
+    </center>
+</body>
+</html>
